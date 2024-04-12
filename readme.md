@@ -2,6 +2,11 @@
 
 > Safely edit published posts behind the scenes without affecting the live site. You can save your changes as a draft and publish them when ready, so you don't have to finish your updates in one sitting. This gives editors the opportunity to collaborate on changes or get approval before publishing.
 
+[![Support Level](https://img.shields.io/badge/support-archived-red.svg)](#support-level) [![MIT License](https://img.shields.io/github/license/10up/wp-safe-edit.svg)](https://github.com/10up/wp-safe-edit/blob/5d7cf0c421d6fdbeb98e3dd54ccb3d41e6d3d4d2/composer.json#L8)
+
+> [!CAUTION]
+> As of 12 April 2024, this project is archived and no longer being actively maintained.
+
 ## Requirements
 
 * **WordPress >= 4.5** due to the use of `get_post_types_by_support()`
@@ -75,6 +80,10 @@ Some of the planned improvements are listed below:
 - Complete unit tests.
 
 - Show more than the last 10 archived drafts.
+
+## Support Level
+
+**Archived:** This project is no longer maintained by 10up. We are no longer responding to Issues or Pull Requests unless they relate to security concerns. We encourage interested developers to fork this project and make it their own!
 
 ## Like what you see?
 
