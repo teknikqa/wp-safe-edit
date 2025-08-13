@@ -35,11 +35,10 @@ class Notices {
 	 * @return void
 	 */
 	public function render_success_notices() {
-		$notice = sanitize_text_field(
-			rawurldecode(
-				filter_input( INPUT_GET, 'pf_success_message' )
-			)
-		);
+        $raw_notice = filter_input( INPUT_GET, 'pf_success_message' );
+        $notice = sanitize_text_field(
+            $raw_notice ? rawurldecode( $raw_notice ) : ''
+        );
 
 		if ( empty( $notice ) ) {
 			return;
@@ -58,11 +57,10 @@ class Notices {
 	 * @return void
 	 */
 	public function render_error_notices() {
-		$notice = sanitize_text_field(
-			rawurldecode(
-				filter_input( INPUT_GET, 'pf_error_message' )
-			)
-		);
+        $raw_notice = filter_input( INPUT_GET, 'pf_success_message' );
+        $notice = sanitize_text_field(
+            $raw_notice ? rawurldecode( $raw_notice ) : ''
+        );
 
 		if ( empty( $notice ) ) {
 			return;
